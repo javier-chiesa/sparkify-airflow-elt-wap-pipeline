@@ -547,8 +547,6 @@ INNER JOIN staging.staging_songs songs
 3. **Artist Name Inconsistency**: Same artist_id with different names → Solved with surrogate key `artist_sk`
 4. **Exact Duplicates**: Duplicate rows in staging_events → Handled by `DISTINCT` in fact table query
 
----
-
 ## Getting Started
 
 ### Prerequisites
@@ -799,8 +797,6 @@ STAGING_CONFIG = [
 
 The following queries demonstrate advanced SQL analytics using the star schema.
 
----
-
 #### Challenge 1: Power User Churn Analysis
 
 **Business Question:**  
@@ -874,7 +870,6 @@ ORDER BY fw.first_week_plays DESC, days_since_last_activity DESC;
 |---------|------------|-----------|------------------|-------------------------|--------------------------|
 |  25       |    Jayden        |     Graves      |       50           |            196.2             |                10          |
 |  42       |    Harper        |     Barret      |       33           |            132.47           |                10          |
----
 
 #### Challenge 2: Subscription Conversion Funnel
 
@@ -957,7 +952,6 @@ ORDER BY days_as_free_user, songs_before_upgrade DESC;
 | 16      | Rylan      | 2018-11-14      | 10                | 14                   | 6                       | 7.97                     |
 | 49      | Chloe      | 2018-11-14      | 12                | 37                   | 14                      | 19.24                    |
 | 88      | Mohammad   | 2018-11-19      | 17                | 27                   | 15                      | 49.40                    |
----
 
 #### Challenge 3: Weekend vs Weekday Listening Cohorts
 
@@ -1025,7 +1019,6 @@ ORDER BY user_count DESC;
 | Weekday Listeners | 74 | 2,425,728 | 8 | 18 | 11.03 |
 | Balanced Listeners | 21 | 228,600 | 7 | 17 | 43.45 |
 | Weekend Warriors | 1 | 1 | 1 | 2 | 100.00 |
----
 
 ### Key Learnings
 
