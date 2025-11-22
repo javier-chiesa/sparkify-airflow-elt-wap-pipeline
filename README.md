@@ -230,8 +230,6 @@ SELECT * FROM audit.dim_users;
 
 The pipeline is defined in `sparkify_elt_wap_dag.py` and uses Airflow's TaskGroup feature for modular design:
 
-![DAG Graph](assets/dag_graph.png)
-
 **DAG Configuration:**
 - **Schedule**: Daily at midnight (`0 0 * * *`)
 - **Start Date**: January 1, 2018
